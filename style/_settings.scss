@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: black;
-    font-family: roboto;
-}
-
-.hero {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    img {
-        object-fit: cover;
-        width: 40%;
-        min-width: 300px;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: roboto;
     }
-}
+    
+    body {
+        background-color: black;
+        .hero {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            img {
+                object-fit: cover;
+                width: 40%;
+                min-width: 300px;
+            }
+        }
+    }

@@ -1,18 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: roboto;
 }
 
 body {
   background-color: black;
 }
-
-.hero {
+body .hero {
   display: flex;
   justify-content: center;
   background-color: black;
 }
-.hero img {
+body .hero img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 40%;
