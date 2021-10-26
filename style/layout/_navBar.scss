@@ -1,0 +1,77 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 50px;
+    a {
+        text-align: center;
+        font-size: 25px;
+        padding: 8px;
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid transparent;
+        &:hover {
+            // border-bottom: 2px solid #ffc400e0;
+            //color: #024d94;
+            // color: #ffc400e0;
+            //  color: #ff4800;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+    }
+    p {
+        border-radius: 10px;
+        color: white;
+        font-size: 25px;
+        padding: 6px;
+        margin-left: 20px;
+    }
+}
+
+#navAccueil {
+    border-top: 2px solid blue;
+    p {
+        border: 2px solid blue;
+        border-radius: 10px;
+    }
+}
+
+#navProjet {
+    border-top: 2px solid #780088;
+    p {
+        border: 2px solid #780088;
+    }
+}
+
+#navService {
+    border-top: 2px solid #ffc400e0;
+    p {
+        border: 2px solid #ffc400e0;
+    }
+}
+
+#navTarif {
+    border-top: 2px solid #5eff00;
+    p {
+        border: 2px solid #5eff00;
+    }
+}
+
+#navContact {
+    border-top: 2px solid #ff4800;
+    p {
+        border: 2px solid #ff4800;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    nav {
+        a,
+        p {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    }
+}

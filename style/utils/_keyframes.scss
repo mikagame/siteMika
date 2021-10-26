@@ -1,0 +1,192 @@
+.show {
+    animation: show 1.5s forwards ease-in-out;
+}
+
+.hide {
+    animation: hide 1.5s forwards ease-in-out;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0.2;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+//logo
+#logo {
+    border: 2px solid transparent;
+    animation: 3s logo forwards ease-in-out;
+}
+
+@keyframes logo {
+    0% {
+        border: 4px solid transparent
+    }
+    25% {
+        border-bottom: 4px solid white;
+    }
+    50% {
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+    75% {
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+    100% {
+        border-left: 4px solid white;
+        border-top: 4px solid white;
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+}
+
+.projets,
+.services {
+    h2 {
+        animation: 0.5s tr ease-in-out;
+    }
+}
+
+.home {
+    h2 {
+        opacity: 0;
+        animation: 0.5s tr ease-in-out forwards;
+        animation-delay: 2.8s;
+    }
+}
+
+.tarifs {
+    h2 {
+        span {
+            opacity: 0;
+        }
+        #tarif1 {
+            animation: 0.2s forwards time ease-in-out;
+        }
+        #tarif2 {
+            animation: 0.2s time forwards ease-in-out;
+            animation-delay: 0.2s;
+        }
+        #tarif3 {
+            animation: 0.2s time forwards ease-in-out;
+            animation-delay: 0.4s;
+        }
+        #tarif4 {
+            animation: 0.2s time forwards ease-in-out;
+            animation-delay: 0.6s;
+        }
+        #tarif5 {
+            animation: 0.2s time forwards ease-in-out;
+            animation-delay: 0.8s;
+        }
+        #tarif6 {
+            animation: 0.2s time forwards ease-in-out;
+            animation-delay: 1s;
+        }
+    }
+}
+
+@keyframes tr {
+    0% {
+        transform: translateX(-3000px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes trReverse {
+    0% {
+        transform: translateX(3000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes time {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes timeReverse {
+    0% {
+        transform: translateX(3000px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.contact {
+    h2 {
+        animation: 0.5s tremble forwards ease-in-out;
+    }
+}
+
+@keyframes tremble {
+    0% {
+        transform: translateY(20px);
+    }
+    20% {
+        transform: translateY(-20px);
+    }
+    40% {
+        transform: translateY(10px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bg {
+    0% {
+        opacity: 1;
+        z-index: 9998;
+    }
+    50% {
+        opacity: 1;
+        z-index: 9998;
+    }
+    60% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        z-index: 9998;
+        transform: translateX(10000px);
+    }
+}

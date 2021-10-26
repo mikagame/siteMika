@@ -1,0 +1,14 @@
+.fond {
+    position: fixed;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.4;
+    img {
+        object-fit: contain;
+        width: 2000px;
+    }
+}

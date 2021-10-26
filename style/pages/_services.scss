@@ -1,0 +1,105 @@
+.services {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        width: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        color: white;
+    }
+    h3 {
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        // margin-bottom: 60px;
+        padding-bottom: 20px;
+        // border-bottom: 3px solid #ffc400e0;
+        color: white;
+        opacity: 0;
+        animation: 0.5s forwards trReverse ease-in-out;
+        animation-delay: 0.5s;
+    }
+    h4 {
+        font-size: 22px;
+        color: white;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: white;
+        padding-bottom: 15px;
+        border-bottom: 3px solid #ffc400e0;
+    }
+}
+
+#heroService {
+    border-top: 2px solid #ffc400e0;
+    border-bottom: 2px solid #ffc400e0;
+}
+
+#S {
+    border-radius: 15px;
+    background: #ffc400e0;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 60px;
+    // border-bottom: 3px solid white;
+}
+
+.colorBorderService {
+    width: 100%;
+    animation: 1.5s chReverseService forwards ease-in-out;
+}
+
+.changeColorService {
+    animation: 1.5s chService forwards ease-in-out;
+}
+
+@keyframes chService {
+    0% {
+        background: #ffc400e0;
+        //  border-bottom: 3px solid white;
+        width: 0;
+    }
+    100% {
+        background: #ffc400e0;
+        //border-bottom: 3px solid #780088;
+        width: 100%;
+    }
+}
+
+@keyframes chReverseService {
+    0% {
+        background: #ffc400e0;
+        // border-bottom: 3px solid #780088;
+        width: 0;
+    }
+    100% {
+        background: #ffc400e0;
+        //  border-bottom: 3px solid white;
+        width: 100%;
+    }
+}
+
+#services {
+    margin-bottom: 50px;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 599px) {
+    .services {
+        margin-bottom: 50px;
+        h2 {
+            font-size: 25px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+}

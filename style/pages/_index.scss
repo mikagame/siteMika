@@ -1,0 +1,143 @@
+.home {
+    margin: 0 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        // margin-bottom: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        //  border-bottom: 3px solid blue;
+        color: white;
+        // background-color: black;
+        width: 100%;
+    }
+    p {
+        font-size: 22px;
+        margin-bottom: 10px;
+        color: black;
+        padding: 5px;
+    }
+}
+
+#heroAccueil {
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+#A {
+    border-radius: 15px;
+    background: blue;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.colorBorderAccueil {
+    width: 100%;
+    animation: 1.5s chReverseAccueil forwards ease-in-out;
+}
+
+.changeColorAccueil {
+    animation: 1.5s chAccueil forwards ease-in-out;
+}
+
+@keyframes chAccueil {
+    0% {
+        background: blue;
+        //  border-bottom: 3px solid white;
+        width: 0;
+    }
+    100% {
+        background: blue;
+        //border-bottom: 3px solid #780088;
+        width: 100%;
+    }
+}
+
+@keyframes chReverseAccueil {
+    0% {
+        background: blue;
+        // border-bottom: 3px solid #780088;
+        width: 0;
+    }
+    100% {
+        background: blue;
+        //  border-bottom: 3px solid white;
+        width: 100%;
+    }
+}
+
+.presentation {
+    text-align: center;
+    margin: 5%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    // box-shadow: 6px 6px 10px white;
+    //background-color: rgb(236, 234, 234);
+    background-color: rgb(59, 57, 57);
+    transform: scale(0);
+    color: white;
+    p {
+        color: white;
+    }
+    a {
+        font-size: 22px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: #ffd54be0;
+        border-bottom: 2px solid transparent;
+        &:hover {
+            color: #ff9100;
+            border-bottom: 2px solid #ff9100;
+        }
+    }
+}
+
+.showPres {
+    animation: 1s showpres ease-in-out forwards;
+}
+
+.hidePres {
+    animation: 1s hidepres ease-in-out forwards;
+}
+
+@keyframes showpres {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes hidepres {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.heroFoot {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(135deg, blue, #780088, #e0ac00, #5eff00, #ff4800);
+}
+
+@media only screen and (max-width: 599px) {
+    .home {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+}
